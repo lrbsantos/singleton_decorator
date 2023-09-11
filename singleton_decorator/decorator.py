@@ -1,7 +1,7 @@
 class _SingletonWrapper:
     """
     A singleton wrapper class. Its instances would be created
-    for each decorated class. 
+    for each decorated class xxx. 
     """
 
     def __init__(self, cls):
@@ -9,7 +9,7 @@ class _SingletonWrapper:
         self._instance = None
 
     def __call__(self, *args, **kwargs):
-        """Returns a single instance of decorated class"""
+        """Returns a single instance of decorated class yyy"""
         if self._instance is None:
             self._instance = self.__wrapped__(*args, **kwargs)
         return self._instance
